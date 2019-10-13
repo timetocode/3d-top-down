@@ -4,9 +4,7 @@ import PlayerCharacter from '../common/entity/PlayerCharacter'
 import GreenCircle from '../common/entity/GreenCircle'
 import Identity from '../common/message/Identity'
 import WeaponFired from '../common/message/WeaponFired'
-
 import * as BABYLON from 'babylonjs'
-import { ENGINE_METHOD_PKEY_ASN1_METHS } from 'constants';
 
 class GameInstance {
     constructor() {
@@ -116,7 +114,6 @@ class GameInstance {
             if (entity.mesh) {
                 entity.mesh.computeWorldMatrix(true)
             }
-
 
             if (entity instanceof GreenCircle) {
                 if (!entity.isAlive) {
